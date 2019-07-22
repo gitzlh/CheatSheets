@@ -34,8 +34,10 @@ git push -u origin +master
 
 #### 版本回退
 - 尚未`git add`到暂存区:
+
 ```git checkout -- filename```
 - 已经`git add`到暂存区,但还没有commit到本地版本库
+
 ```
 git reset  HEAD filename
 git checkout -- filename
