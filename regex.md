@@ -6,8 +6,8 @@
 	title="regex expression" width="800" height="800" />
 
 ### 注意事项
-- []内部是不需要转义的
-- []内部的^不表示开头，而是否定
+- `[]` 内部是不需要转义的.
+- `[]` 内部的 `^` 不表示开头，而是否定.
 ## PART 2: python 正则函数
 
 ### 1. re.match(regex, str)
