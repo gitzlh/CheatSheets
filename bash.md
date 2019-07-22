@@ -18,7 +18,9 @@ git push
 git stash
 git pull
 ```
-#### 远程与本地均修改，本地无法push(强行push)
+#### 远程与本地均修改，本地无法push
+- 强行覆盖远程
 ```
 git push -u origin +master
 ```
+- 每次本地修改时，先git pull
