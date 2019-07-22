@@ -5,7 +5,7 @@
 <img src="regex.png" alt="REGEX"
 	title="regex expression" width="800" height="800" />
 
-## PAER 2: python 正则函数
+## PART 2: python 正则函数
 
 ### 1. re.match(regex, str)
 #### 返回值
@@ -20,22 +20,22 @@ else:
 ```
 ### 2. Match对象的分组
 - 正则表达式中，用()括住的，就是要提取的分组（Group）
-- 提取时，group(0)是原始字符串，group(1)、group(2)……表示第1、2、……个子串。
+- 提取时，若m为Match对象，m.group(0)是原始字符串，m.group(1)表示第1个子串,m.groups()返回一个tuple。
+
 #### 用例：
 ```python
 test = '010-122345'
-m = re.match(r'^（\d{3}）[-]（\d{5}$）', test)
+m = re.match(r'^(\d{3})[-](\d{6}$)', test)
 if m:
-    return m.group(1)
+    print(m.group(1))
 ```
 ### 3. re.split(regex,str)
 #### 返回值 
 切分后的list
 #### 用例
 ```python
-patter = r'[,;\s
 re.split(r'[\s,;]+', 'a.b;; c  d')
 ['a', 'b', 'c', 'd']
 
 ```
-J
+
