@@ -15,7 +15,6 @@ git push
 ```
 #### 远程修改pull到本地
 ```
-cd xx
 git stash
 git pull
 ```
