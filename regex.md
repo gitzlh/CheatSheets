@@ -4,6 +4,6 @@
 ![alt text](regex.png "Logo Title Text 1")
 
 <img src="regex.png" alt="REGEX"
-	title="regex expression" width="150" height="100" />
+	title="regex expression" width="500" height="500" />
 
 ## python 正则函数
