@@ -6,7 +6,7 @@
 	title="regex expression" width="800" height="800" />
 
 ### 注意事项
-- `[]` 内部是不需要转义的.
+- `[]` 内部是不需要转义的,但`'` ,`[`,`]`还是要转义。
 - `[]` 内部的 `^` 不表示开头，而是否定.
 ## PART 2: python 正则函数
 
@@ -37,8 +37,17 @@ if m:
 切分后的list
 #### 用例
 ```python
-re.split(r'[\s,;]+', 'a.b;; c  d')
-['a', 'b', 'c', 'd']
+>re.split(r'[\s,;]+', 'a.b;; c  d')
+>['a', 'b', 'c', 'd']
 
+```
+### 4. re.sub(regex,repl, str)
+#### 返回值 
+替换后的str
+#### 用例
+```python
+a = '[\'abc\']'
+pattern = r'[\'\[\]]'
+re.sub(p,'',a)
 ```
 
