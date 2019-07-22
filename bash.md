@@ -29,5 +29,11 @@ git push -u origin +master
 - 要随时掌握工作区的状态，使用`git status`命令。
 
 - 如果`git status`告诉你有文件被修改过，用`git diff`可以查看修改内容。
+
+#### 版本回退
+`git reset --hard HEAD^`
+
+- 上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本写成HEAD~100。
+
 end
 
