@@ -3,7 +3,7 @@
 ## PART 1: 正则表达式基础
 
 <img src="regex.png" alt="REGEX"
-	title="regex expression" width="800" height="8jj00" />
+	title="regex expression" width="800" height="800" />
 
 ## PAER 2: python 正则函数
 
