@@ -33,8 +33,13 @@ git push -u origin +master
 - 如果`git status`告诉你有文件被修改过，用`git diff`可以查看修改内容。
 
 #### 版本回退
-- 回退到上一个版本
-`git reset --hard HEAD^`
+- 尚未`git add`到暂存区
+`git checkout -- filename`
+- 已经`git add`到暂存区,但还没有commit
+```
+git reset  HEAD filename
+git checkout -- filename
+```
 - 根据版本号回退
 `git reset --hard 1094a`
 - 上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本写成HEAD~100。
