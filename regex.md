@@ -46,8 +46,9 @@ if m:
 替换后的str
 #### 用例
 ```python
-a = '[\'abc\']'
-pattern = r'[\'\[\]]'
-re.sub(p,'',a)
+a = '['abc']'
+>pattern = r'[\'\[\]]'
+>re.sub(p,'',a)
+>'abc'
 ```
 
