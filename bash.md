@@ -5,15 +5,17 @@
 `rm -r <dir>`
 ## Git
 
-#### 本地与远程项目关联的一系列操作
-- 网页端建立项目
-- 本地clone：
+#### 远程项目clone到本地
 `git clone git@github.com:gitzlh/CheatSheets.git`
-- 本地增删改
-- 本地push
+#### 本地修改push到远程
 ```
 git add .
 git commit -m 'comments' #-m 后面的是修改信息，必须写
 git push
 ```
-
+#### 远程修改pull到本地
+```
+cd xx
+git stash
+git pull
+```
