@@ -1,3 +1,3 @@
 # CheatSheets
 
-Currently include regex, bash commands
+Currently include bash commands and regex.
