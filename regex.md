@@ -2,7 +2,7 @@
 
 ## PART 1: 正则表达式基础
 
-<img src="regex.png" alt="REGEX"
+<img src="img/regex.png" alt="REGEX"
 	title="regex expression" width="800" height="800" />
 
 ### 注意事项
