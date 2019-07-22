@@ -18,3 +18,7 @@ git push
 git stash
 git pull
 ```
+#### 远程与本地均修改，本地无法push(强行push)
+```
+git push -u origin +master
+```
