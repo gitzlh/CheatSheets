@@ -1,2 +1,3 @@
 # CheatSheets
-my cheatsheets, currently include regex, terminal commands
+
+Currently include regex, bash commands
