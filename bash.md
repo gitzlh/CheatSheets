@@ -14,7 +14,7 @@ git commit -m 'comments' #-m 后面的是修改信息，必须写
 git push
 ```
 - git add把要提交的所有修改放到暂存区（Stage），git commit一次性把暂存区的所有修改提交到分支。
-[](img/gitadd.jpg)
+[git](img/gitadd.jpg)
 [](img/gitcommit.jpg)
 #### 远程修改pull到本地
 ```
