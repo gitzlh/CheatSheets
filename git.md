@@ -30,18 +30,18 @@ git push -u origin +master
 #### 版本回退
 - 尚未`git add`到暂存区:
 
-```git checkout -- filename```
+    ```git checkout -- filename```
 - 已经`git add`到暂存区,但还没有commit到本地版本库:
 
-```
-git reset  HEAD filename
-git checkout -- filename
-```
+    ```
+    git reset  HEAD filename
+    git checkout -- filename
+    ```
 - 已经commit到了本地版本库:
 
-```git reset --hard HEAD^```
+    ```git reset --hard HEAD^```
 
- 上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本写成HEAD~100。
+    上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本写成HEAD~100。
 
 - 已经push到了远程版本库:
 痕迹无法消除，但可以本地回退，再重新push。
