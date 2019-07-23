@@ -6,7 +6,8 @@
 `rm -r <dir>`
 #### 创建别名
 ```
-vim ~/.bashrc
+vim ~/.zshrc
 alias ns='nvidia-smi'
-source ~/.bashrc
+alias gitamp="git add . ; git commit -m 'new'; git push"
+source ~/.zshrc
 ```
