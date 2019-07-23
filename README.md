@@ -1,3 +1,6 @@
 # CheatSheets
 
-Currently include bash commands and regex.
+Currently include cheatsheets for:
+- [bash commands](bash.sh) 
+- [regex](regex.sh)
+- [git](git.sh)
