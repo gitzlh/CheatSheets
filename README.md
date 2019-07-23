@@ -1,6 +1,6 @@
 # CheatSheets
 
 Currently include cheatsheets for:
-- [bash commands](bash.sh) 
-- [regex](regex.sh)
-- [git](git.sh)
+- [bash commands](bash.md) 
+- [regex](regex.md)
+- [git](git.md)
