@@ -4,6 +4,10 @@
 `du -sh * `
 #### 删除文件夹
 `rm -r <dir>`
+#### mac/linux下txt中文乱码
+`iconv -c -f GB2312 -t UTF-8 凡人修仙转.txt >> 凡人修仙转2.txt`
+
+
 #### 创建别名
 ```
 vim ~/.zshrc
