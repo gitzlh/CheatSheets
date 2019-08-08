@@ -7,7 +7,8 @@
 #### mac/linux下txt中文乱码
 `iconv -c -f GB2312 -t UTF-8 凡人修仙转.txt >> 凡人修仙转2.txt`
 
-
+#### 根据文件名寻找文件
+`find . -name "word2vec*" # 当前目录下寻找包含word2vec的文件` 
 #### 创建别名
 ```
 vim ~/.zshrc
