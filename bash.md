@@ -22,3 +22,9 @@ source ~/.zshrc
 ```
 sed -n '100,200p' filename 
 ```
+#### 打乱文件的行
+
+
+```
+shuf input_file.txt -o  output_file.txt
+```
