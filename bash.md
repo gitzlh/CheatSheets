@@ -16,3 +16,9 @@ alias ns='nvidia-smi'
 alias gitamp="git add . ; git commit -m 'new'; git push"
 source ~/.zshrc
 ```
+
+#### 截取文件中间某些行
+
+```
+sed -n '100,200p' filename 
+```
