@@ -59,10 +59,15 @@ vim ~/ssh/config  # 客户端：设置别名、端口，格式如下：
     # IdentityFile ~/.ssh/id_rsa
 
 ```
+## 网络
 
+#### 下载
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.sh
+```
 
 ## 其他
-#### 创建别名
+#### 创建命令别名
 ```
 vim ~/.zshrc
 alias ns='nvidia-smi'
