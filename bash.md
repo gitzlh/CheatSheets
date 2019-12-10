@@ -1,5 +1,7 @@
 # Bash
 
+## 文件
+
 #### 查看目录下所有文件大小
 `du -sh * `
 #### 删除文件夹
@@ -9,13 +11,7 @@
 
 #### 根据文件名寻找文件
 `find . -name "word2vec*" # 当前目录下寻找包含word2vec的文件` 
-#### 创建别名
-```
-vim ~/.zshrc
-alias ns='nvidia-smi'
-alias gitamp="git add . ; git commit -m 'new'; git push"
-source ~/.zshrc
-```
+
 
 #### 截取文件中间某些行
 
@@ -27,4 +23,40 @@ sed -n '100,200p' filename
 
 ```
 shuf input_file.txt -o  output_file.txt
+```
+
+## 服务器
+
+#### 上传
+```
+scp  /home/me/Desktop/test.txt  user_name@192.168.0.0:/home/zlh/.ssh    #文件
+scp  -r /home/me/Desktop/test  user_name@192.168.0.0:/home/zlh/.ssh  #文件夹
+```
+####下载
+```
+scp user_name@192.168.0.0:/opt/test.txt  /home/me/Desktop
+scp -r user_name@192.168.0.0:/opt/test  /home/me/Desktop
+
+```
+####免密登录
+```
+ssh-keygen -b 4096 -t rsa # 客户端：生成私钥、公钥；.ssh文件下已经有则不需要；
+scp ~/.ssh/id_rsa.pub user@192.168.0.0:~/.ssh  # 客户端：复制公钥到服务器
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys # 服务器端：追加公钥内容到authorized_keys；若无此文件可直接copy
+vim ~/ssh/config  # 客户端：设置别名、端口
+  HostName icl
+  Port 234
+  User zlh
+  IdentityFile ~/.ssh/id_rsa
+
+```
+
+
+## 其他
+#### 创建别名
+```
+vim ~/.zshrc
+alias ns='nvidia-smi'
+alias gitamp="git add . ; git commit -m 'new'; git push"
+source ~/.zshrc
 ```
