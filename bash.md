@@ -43,8 +43,8 @@ scp  -r /home/me/Desktop/test  user_name@192.168.0.0:/home/zlh/.ssh  #文件夹
 ```
 #### 下载
 ```
-scp user_name@192.168.0.0:/opt/test.txt  /home/me/Desktop
-scp -r user_name@192.168.0.0:/opt/test  /home/me/Desktop
+scp -P 21111 user_name@192.168.0.0:/opt/test.txt  /home/me/Desktop
+scp -P 21111 -r user_name@192.168.0.0:/opt/test  /home/me/Desktop #-P指定端口
 
 ```
 #### 免密登录
