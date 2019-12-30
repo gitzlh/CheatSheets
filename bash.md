@@ -61,10 +61,20 @@ vim ~/ssh/config  # 客户端：设置别名、端口，格式如下：
 ```
 ## 网络
 
-#### 下载
+#### HTTP下载 -单个文件
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.sh
 ```
+#### FTP下载 -单个文件
+```
+wget --ftp-user=xxx --ftp-password=xxx ftp://cf.pku.edu.cn:21/123.zip  # 会在当前目录新建名为123的目录
+```
+
+#### FTP下载 -文件夹
+```
+wget -nH -m --ftp-user=xxx --ftp-password=xxx ftp://cf.pku.edu.cn:21/123/  # 会在当前目录新建名为123的目录
+```
+
 
 ## 其他
 #### 创建命令别名
