@@ -74,7 +74,20 @@ wget --ftp-user=xxx --ftp-password=xxx ftp://cf.pku.edu.cn:21/123.zip  # 会在�
 ```
 wget -nH -m --ftp-user=xxx --ftp-password=xxx ftp://cf.pku.edu.cn:21/123/  # 会在当前目录新建名为123的目录
 ```
-
+## python
+#### 查看python版本
+```
+python --version
+```
+#### 查看python位置
+```
+which python
+```
+#### 改变PYTHONPATH
+```
+export PYTHONPATH=$PYTHONPATH:/home/zlh/DST
+```
+export用来设置环境变量；多个路径之间用冒号进行分割
 
 ## 其他
 #### 创建命令别名
@@ -84,3 +97,4 @@ alias ns='nvidia-smi'
 alias gitamp="git add . ; git commit -m 'new'; git push"
 source ~/.zshrc
 ```
+
