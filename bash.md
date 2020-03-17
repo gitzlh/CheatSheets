@@ -89,8 +89,13 @@ export PYTHONPATH=$PYTHONPATH:/home/zlh/DST
 ```
 export用来设置环境变量；多个路径之间用冒号进行分割
 
+要是总是提示找不到文件，可以干脆cd到目标路径。
+
 #### nohup服务器后台运行程序
+```
 nohup python3 train.py > log.txt &
+```
+
 
 ## 其他
 #### 创建命令别名
