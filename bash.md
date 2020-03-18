@@ -85,11 +85,12 @@ which python
 ```
 #### 改变PYTHONPATH
 ```
-export PYTHONPATH=$PYTHONPATH:/home/zlh/DST
+export PYTHONPATH=$PYTHONPATH:～/DST
+python3.7 models/HDST_BERT/train_HDST.py
 ```
 export用来设置环境变量；多个路径之间用冒号进行分割
 
-要是总是提示找不到文件，可以干脆cd到目标路径。
+然后直接在该路径（DST）下执行命令
 
 #### nohup服务器后台运行程序
 ```
