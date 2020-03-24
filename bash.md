@@ -92,6 +92,15 @@ export用来设置环境变量；多个路径之间用冒号进行分割
 
 然后直接在该路径（DST）下执行命令
 
+#### 自动运行python程序  
+向.zshrc写入以下代码即可
+```
+if [[! $(pgrep -f python\ USDT.py)]];then
+    nohup python USDT.py >log.txt&
+fi
+```
+
+
 #### nohup服务器后台运行程序
 ```
 nohup python3 train.py > log.txt &
@@ -104,6 +113,9 @@ nohup python3 train.py > log.txt &
 vim ~/.zshrc
 alias ns='nvidia-smi'
 alias gitamp="git add . ; git commit -m 'new'; git push"
+alias pag = "ps aux|grep"
 source ~/.zshrc
 ```
+
+
 
