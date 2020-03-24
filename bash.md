@@ -108,6 +108,15 @@ nohup python3 train.py > log.txt &
 
 
 ## 其他
+#### 长命令跳转
+```
+CTRL+A 跳转开头
+
+CTRL+E 跳转结尾
+
+
+```
+
 #### 创建命令别名
 ```
 vim ~/.zshrc
