@@ -127,13 +127,10 @@ source ~/.zshrc
 背景知识：
 https://segmentfault.com/a/1190000015143583?utm_source=tag-newest
 
-为什么nohup & 、tqdm、 >会把bar打印到文件上?
-tqdm 输出到stderr
-> 等于1>， 只重定向stdout
-看似没问题，但nohup & 会把stderr重定向到stdout
-怎么解决？
+为什么nohup & 、tqdm、 >三者配合会把bar打印到文件上?
+首先tqdm输出到stderr，> 等于1>， 只重定向stdout。看似没问题，但问题是nohup & 会把stderr重定向到stdout，导致log文件乱码。
+怎么解决？重定向stderr到空文件：
 nohup python3 train.py >log.txt 2>/dev/null &
-2> 指的是 stderr
 ```
 
 
