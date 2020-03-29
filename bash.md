@@ -124,8 +124,16 @@ source ~/.zshrc
 ```
 #### 输出重定向 
 ```
-直接看这篇文章
+背景知识：
 https://segmentfault.com/a/1190000015143583?utm_source=tag-newest
+
+为什么nohup & 、tqdm、 >会把bar打印到文件上?
+tqdm 输出到stderr
+> 等于1>， 只重定向stdout
+看似没问题，但nohup & 会把stderr重定向到stdout
+怎么解决？
+nohup python3 train.py >log.txt 2>/dev/null &
+2> 指的是 stderr
 ```
 
 
