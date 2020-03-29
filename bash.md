@@ -111,10 +111,7 @@ nohup python3 train.py > log.txt &
 #### 长命令跳转
 ```
 CTRL+A 跳转开头
-
 CTRL+E 跳转结尾
-
-
 ```
 
 #### 创建命令别名
@@ -124,6 +121,11 @@ alias ns='nvidia-smi'
 alias gitamp="git add . ; git commit -m 'new'; git push"
 alias pag = "ps aux|grep"
 source ~/.zshrc
+```
+#### 输出重定向 
+```
+直接看这篇文章
+https://segmentfault.com/a/1190000015143583?utm_source=tag-newest
 ```
 
 
