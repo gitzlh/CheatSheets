@@ -133,5 +133,15 @@ https://segmentfault.com/a/1190000015143583?utm_source=tag-newest
 nohup python3 train.py >log.txt 2>/dev/null &
 ```
 
+#### 解压与压缩
+```
+.zip
+解压：unzip FileName.zip
+压缩：zip FileName.zip DirName
+
+.gz
+解压1：gunzip FileName.gz
+压缩：gzip FileName
+```
 
 
