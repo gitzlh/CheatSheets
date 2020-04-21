@@ -143,5 +143,5 @@ nohup python3 train.py >log.txt 2>/dev/null &
 解压1：gunzip FileName.gz
 压缩：gzip FileName
 ```
-
+文件操作加-r
 
