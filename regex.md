@@ -47,8 +47,14 @@ if m:
 #### 用例
 ```python
 a = '['abc']'
->pattern = r'[\'\[\]]'
+>p = r'[\'\[\]]'
 >re.sub(p,'',a)
 >'abc'
 ```
 
+```python
+a = 'give me a hug at 5am and 6am'
+>p = r'(\d)(am)'
+>re.sub(p,r'\1 \2',a)
+>'give me a hug at 5 am and 6 am'
+```
