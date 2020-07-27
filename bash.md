@@ -37,6 +37,11 @@ cat test >> test1  # test的内容追加到test1，test1原有内容被覆盖
 
 ```
 
+#### linux/windows文件互转
+```
+dos2unix domain.sh
+```
+
 ## 服务器
 
 #### 上传
