@@ -37,7 +37,7 @@ if m:
 切分后的list
 #### 用例
 ```python
->re.split(r'[\s,;]+', 'a.b;; c  d')
+>re.split(r'[\s,;]+', 'a,b;; c  d')
 >['a', 'b', 'c', 'd']
 
 ```
