@@ -33,7 +33,7 @@ shuf input_file.txt -o  output_file.txt
 cat test > test1  # test的内容粘贴到test1，test1原有内容被覆盖
 ```
 ```
-cat test >> test1  # test的内容追加到test1，test1原有内容被覆盖
+cat test >> test1  # test的内容追加到test1，test1原有内容不被覆盖
 
 ```
 
