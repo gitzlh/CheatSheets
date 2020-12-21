@@ -1,7 +1,7 @@
 # Git
 
-<img src="img/git.png" alt="REGEX"
-	title="regex expression" width="800" height="300" />
+<img src="img/git2.png" alt="git"
+	title="git" width="800" height="300" />
     
 #### 远程项目clone到本地
     `git clone git@github.com:gitzlh/CheatSheets.git`
