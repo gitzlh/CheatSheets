@@ -2,6 +2,12 @@
 
 ## 文件
 
+#### 按照时间删除文件
+
+`find . -mtime +11 -name "*.*" -exec rm -Rf {}  `
+
+`find . -mtime +11 -name "*.*" -type d -exec rm -Rf {}  `
+
 #### 查看目录下所有文件大小
 `du -sh * `
 
