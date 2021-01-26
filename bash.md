@@ -2,6 +2,12 @@
 
 ## 文件
 
+#### 按列split，并取出
+`cat input.txt | cut -f 1,4 > output.txt`
+
+#### 按列合并两个文件
+`paste input.txt input2.txt > output.txt`
+
 #### 按照时间删除文件
 
 `find . -mtime +11 -name "*.*" -exec rm -Rf {}  `
