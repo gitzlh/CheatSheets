@@ -2,6 +2,9 @@
 
 ## 文件
 
+#### 删除文件中含有特定文本的行
+`sed -ie "/抛弃/d" filename.txt
+
 #### 按列split，并取出
 `cat input.txt | cut -f 1,4 > output.txt`
 
