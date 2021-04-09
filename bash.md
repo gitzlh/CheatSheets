@@ -2,6 +2,12 @@
 
 ## 文件
 
+#### 拷贝文件夹，排除其中某些文件
+
+`rsync -av --exclude='path1/to/exclude' --exclude='path2/to/exclude' source destination`
+如果是远程服务器：
+`rsync -av -e ssh --exclude='*.out' /path/to/source/ user@hostB:/path/to/dest/`
+
 #### 删除文件中含有特定文本的行
 `sed -ie "/抛弃/d" filename.txt
 
